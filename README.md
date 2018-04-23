@@ -223,7 +223,10 @@ only last result of an expression delimited by the semi-colon symbol will be app
 ```javascript
 	b = 0
 	k = 10
-	x:[1,50]:1 @ k = if (k == 0, k + 1, b = b + 2; k - 1 )
+	x:[1,50]:1 @ 
+		k = if (k == 0, 
+			k + 1, 
+			b = b + 2; k - 1 )
 	println (b)
 ```
 or
