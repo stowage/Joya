@@ -242,6 +242,47 @@ or
 	println (c)
 ```
 
+### If Statement
+
+```if``` statement is a function of three arguments:
+
+```javascript
+	[ <variable> = ] if (<condition>, <then> [ , <otherwise> ])
+```
+to perform multiple operations in ```<then>``` or ```<otherwise>``` statement operations can be split by semi-colons or line breaks. 
+Last expression should not contain semi-colon sign:
+
+```javascript
+	if (i < 0,
+			s = s + f(i)
+			println (s)
+		)
+	if (i < 0,
+			s = s + f(i);
+			println (s)
+		)
+```
+
+
+```if``` statement can return a value because of its functional behaviour, f.e.:
+
+```javascript
+	m = 1
+	s = 3
+	i = -10
+	m = m + if (i < 0,
+					s = s + f(i)
+					println (s)
+					s
+					,
+					s = s - f(i)
+					println (s)
+					s
+			)
+```
+
+last expression in a block is treated as a return statement.
+
 
 ### User Defined Functions
 
@@ -546,48 +587,6 @@ n = {2,20,3,23,42,34,53,45,3,45,
 BubbleSort (n)
 
 ```
-
-### If Statement
-
-```if``` statement is a function of three arguments:
-
-```javascript
-	[ <variable> = ] if (<condition>, <then> [ , <otherwise> ])
-```
-to perform multiple operations in ```<then>``` or ```<otherwise>``` statement operations can be split by semi-colons or line breaks. 
-Last expression should not contain semi-colon sign:
-
-```javascript
-	if (i < 0,
-			s = s + f(i)
-			println (s)
-		)
-	if (i < 0,
-			s = s + f(i);
-			println (s)
-		)
-```
-
-
-```if``` statement can return a value because of its functional behaviour, f.e.:
-
-```javascript
-	m = 1
-	s = 3
-	i = -10
-	m = m + if (i < 0,
-					s = s + f(i)
-					println (s)
-					s
-					,
-					s = s - f(i)
-					println (s)
-					s
-			)
-```
-
-last expression in a block is treated as a return statement.
-
 
 ### JOYA Modules
 
