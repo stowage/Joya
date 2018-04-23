@@ -194,7 +194,10 @@ JOYA has internal set of standard functions like sin(x), cos(x), floor(x), ceil(
 
 ```javascript
 	k = 10
-	x:[1,5]:1 @ if (k == 0, k = k + 1, k = k - 1 )
+	x:[1,5]:1 @ 
+		if (k == 0, 
+				k = k + 1, 
+				k = k - 1 )
 	println (k)
 ```
 
@@ -202,7 +205,10 @@ or
 
 ```javascript
 	k = 10
-	x:[1,5]:1 @ k = if (k == 0, k + 1, k - 1 )
+	x:[1,5]:1 @ 
+		k = if (k == 0, 
+					k + 1, 
+					k - 1 )
 	println (k)
 ```
 
