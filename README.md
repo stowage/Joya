@@ -443,7 +443,9 @@ F.e.:
 
 ```javascript
 	x = 5
-	f(x) = x^2
+	f(x) = {
+		x = x^2
+	}
 	println (f(x))
 	println (x)
  
