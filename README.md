@@ -611,9 +611,14 @@ For example there is a file named ```CustomModule.joya``` containing expressions
 To use specific variable or a function in current module use following statement:
 
 ```javascript
-	$CustomModule (t, n) = `
-		println (amp (t, 200, 103, n))
-	`
+	time = 10
+	number = 20
+	
+	time:[1, 10]:1 @
+		$CustomModule (time, number) = `
+			println (amp (time, 200, 103, number))
+			println (amp (5, 200, 103, number))
+		`
 	
 ```
 
