@@ -215,7 +215,7 @@ or
 It is possible to perform multiple operations in a function, for example:
 
 ```javascript
-	y = -2
+	y = 2
 	x = abs( m2 = y * y * y; -m2 / y)
 ```
 only last result of an expression delimited by the semi-colon symbol will be applied to a function. So we can easily perform multiple operation in one function call even if it has multiple parameters:
