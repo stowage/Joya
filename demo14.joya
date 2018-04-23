@@ -14,7 +14,7 @@ println(ret)
 
 from = -25
 to = 5
-$bisection {from < to} (from, to, ret, fn2(s) = s^2 - 8) = `
-	ret = bisection (from, to, function (arg) = fn2(arg))
+$bisection {from < to} (from, to, ret, fn1(s) = s^2 - 8) = `
+	ret = bisection (from, to, function (arg) = fn1(arg))
 `
 println(ret)

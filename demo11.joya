@@ -15,3 +15,8 @@ bisection (x, y, function (arg)) = {
 }
 
 println (bisection (1, 20, function (arg) = arg^2 - 4))
+println (bisection (1, 20, function (arg) = arg^2 - 6))
+println (bisection (1, 20, function (arg) = arg^2 - 7))
+println (bisection (1, 20, function (arg) = arg^2 - 8))
+println (bisection (1, 20, function (arg) = arg^2 - 9))
+
