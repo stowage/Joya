@@ -444,10 +444,12 @@ F.e.:
 ```javascript
 	x = 5
 	f(x) = {
+		y = 10
 		x = x^2
 	}
 	println (f(x))
 	println (x)
+	println (y)
  
 ```
 will output:
@@ -455,6 +457,7 @@ will output:
 ```
 	25.0
 	5.0
+	10.0
 ```
 
 this is not related to array variables, so f.e.:
