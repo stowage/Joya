@@ -541,14 +541,14 @@ Last expression should not contain semi-colon sign:
 	s = 3
 	i = -10
 	m = m + if (i < 0,
-						s = s + f(i)
-						println (s)
-						s
-						,
-						s = s - f(i)
-						println (s)
-						s
-				 )
+					s = s + f(i)
+					println (s)
+					s
+					,
+					s = s - f(i)
+					println (s)
+					s
+			)
 ```
 
 last expression in a block is treated as a return statement.
@@ -596,7 +596,7 @@ It's also possible to read results from an external module by assigning shared v
 	d33 = 390 * 10^-12
 	C = 7 * 10^-8
 	$CustomModule (result) `
-		d33 = 390 * 10^-12; C = C;
+		d33 = 180 * 10^-12;
 		result = d33 * 10^12;
 	`
 	println (result)
