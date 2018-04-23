@@ -608,43 +608,43 @@ Modules may have a behavior similar to conditional functions,
 f.e. there is a module named ```bisection.joya```
 
 ```javascript
-bisection (x, y, function (arg)) = { 
-	eps = 0.001
-	a = x
-	b = y
-	root = ?
-	t:[?, ?] @ {
-		if ( abs(a - b) > eps ,
-		 	c = (a + b) / 2
+	bisection (x, y, function (arg)) = { 
+		eps = 0.001
+		a = x
+		b = y
+		root = ?
+		t:[?, ?] @ {
+			if ( abs(a - b) > eps ,
+		 		c = (a + b) / 2
     	 		if ( function (c) * function (a)  <= 0, b = c, a = c )
 			    root = c,
     	 		?
     	 	)
+		}
+		root
 	}
-	root
-}
 ```
 
 conditional module call will look as follows:
 
 ```javascript
-from = -5
-to = 5
-$bisection {from < to} (from, to, ret) = `
-	ret = bisection (from, to, function (arg) = arg^2 - 4)
-`
-println(ret)
+	from = -5
+	to = 5
+	$bisection {from < to} (from, to, ret) = `
+		ret = bisection (from, to, function (arg) = arg^2 - 4)
+	`
+	println(ret)
 
-from = 25
-to = 5
-$bisection {from < to} (from, to, ret, fn1(s) = s^2 - 4) = `
-	ret = bisection (from, to, function (arg) = fn1(arg))
-`
-println(ret)
+	from = 25
+	to = 5
+	$bisection {from < to} (from, to, ret, fn1(s) = s^2 - 4) = `
+		ret = bisection (from, to, function (arg) = fn1(arg))
+	`
+	println(ret)
 
 ```
 
-the output will we:
+the output will be:
 
 ```
 -2.0001220703125
