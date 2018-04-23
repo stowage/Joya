@@ -7,7 +7,7 @@ JOYA Language is a lightweight scripting language.
 Clone repository, go to directory ```Joya```, open terminal and
 run command:
 
-```
+```sh
 java -jar joya-lang-1.0.jar demo1.joya
 ```
 
@@ -17,14 +17,14 @@ JOYA language provides an easy solution for creating user defined functions, tha
 
 Following statement demonstrates function declaration in JOYA:
 
-``` 
+```javascript 
 	f (x, y) = x * sin (y) + y * cos (x)
 	println (f (pi / 2, pi / 3))
 ```
 
 Any variable can be declared at any place and it's visible globally within the module:
 
-```
+```javascript
 	t = pi^2
 	println (f (pi, t))
 ```
@@ -32,7 +32,7 @@ Any variable can be declared at any place and it's visible globally within the m
 Bellow is the program example written in JOYA Language:
 
 
-```
+```javascript
 	x:[0,4600]: 100
 	y:[0,4600]: 100
 	F:[0,20]: 1
