@@ -353,10 +353,10 @@ It's also possible to define condition in statement where function is called:
 		println ('x == 1')
 	}
 	x = 1
-	f {x==1} ()
+	f {x == 1} ()
 	fn()
 	x = 5
-	f {x==1}()
+	f {x == 1} ()
 	fn()
 ```
 outputs:
