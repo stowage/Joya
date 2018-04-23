@@ -528,7 +528,8 @@ It's also possible to change the range at the runtime
 ```javascript
 BubbleSort (number[]) = {
 	length = size (number)
- 	i:[0, length):1 @ j:[i + 1, length):1 @ {
+ 	i:[0, length):1 @ 
+ 		j:[i + 1, length):1 @ {
                 if (number[i] > number[j],
                     a =  number[i]
                     number[i] = number[j]
