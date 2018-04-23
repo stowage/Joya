@@ -264,9 +264,28 @@ Or with multiple lines:
 	println (f (0, 10, 2))
 ```
 
-Last result in last expression of a function body will return function result.
+Last result in last expression of a function body will return function result:
+
+```javascript
+	f (a, b, t) = {
+		sum = 0
+		y:[a,b]:1 @ sum = sum + y^t
+		if ( sum > 100, sum, y)
+	}
+	println (f (0, 10, 1))
+	println (f (0, 10, 2))
+	
+```
+
+output will be:
+
+```
+10.0
+385.0
+```
 
 #### Abstract Functions
+
 
 ```javascript
 	f (a, b, fn (x)) = {
@@ -297,7 +316,8 @@ Conditional function executes only when it meets specified criteria, f.e.:
 	f()
 	fn()
 ```
-function ```f``` will be called as long as variable x will be equal to 5, so the output will be:
+function ```f``` will be called as long as variable x will be equal to 5 and 
+function ```fn``` will be called if x is equal 1, so the output will be:
 
 ```
 	x == 1
