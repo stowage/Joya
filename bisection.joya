@@ -1,0 +1,15 @@
+bisection (x, y, function (arg)) = {
+	eps = 0.001
+	a = x
+	b = y
+	root = ?
+	t:[?, ?] @ {
+		if ( abs(a - b) > eps ,
+		 	c = (a + b) / 2
+    	 		if ( function (c) * function (a)  <= 0, b = c, a = c )
+			    root = c,
+    	 		?
+    	 	)
+	}
+	root
+}

@@ -1,0 +1,17 @@
+BubbleSort (number[]) = {
+	length = size (number)
+ 	i:[0, length):1 @ j:[i + 1, length):1 @ {
+                if (number[i] > number[j],
+                    a =  number[i]
+                    number[i] = number[j]
+                    number[j] = a 
+                )
+    }
+    i:[0,length):1 @ println (number[i])
+}
+
+n = {2,20,3,23,42,34,53,45,3,45,
+34,5,34,5,3,45,3,45,3,45,6,76,87,
+8,678,6,78,6,6,8,7,8,67,34,23,42,
+34,235,4,5,34,5,43,45,3,45}
+BubbleSort (n)

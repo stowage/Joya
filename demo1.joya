@@ -1,0 +1,2 @@
+f (x, y) = x * sin (y) + y * cos (x)
+println (f (pi / 2, pi / 3))

@@ -1,0 +1,19 @@
+x = {5, 8, 7, 1, 4}
+y = {3, 1, 9, 7}
+f(x, length) = { 
+	sum = 0
+	i:[0, length): 1 @ {
+		sum = sum + x[i]
+	}	
+	i:[0, length): 1 @ {
+		x[i] = x[i] / sum
+	}
+}
+
+f(x, size(x))
+
+println(x[0])
+
+f(y, size(y))
+
+println(y[0])

@@ -1,0 +1,15 @@
+calculate { abs(a - b) > eps } (fn (arg)) = { 
+	c = (a + b) / 2
+   if ( fn (c) * fn (a)  <= 0, b = c, a = c )
+	root = c
+}
+bisection (x, y, function (arg)) = { 
+	eps = 0.001
+	a = x
+	b = y
+	root = ?
+	t:[?, ?] @ if (calculate (fn(arg) = function(arg)) == ?, ?)
+	root
+}
+
+println (bisection (-5, 5, function (arg) = arg^2 - 4))

@@ -1,0 +1,8 @@
+a = 1; b = 5; v = 2;
+x:[a,b];
+x::v;
+y:[a,b*2];
+y::1;
+x @ y @ println(x^2*y^2);
+a = 10; b = 20; v = 3;
+x @ y @ println(x^2*y^2);

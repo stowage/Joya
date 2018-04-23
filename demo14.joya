@@ -1,0 +1,13 @@
+from = -5
+to = 5
+$bisection {from < to} (from, to, ret) = `
+	ret = bisection (from, to, function (arg) = arg^2 - 4)
+`
+println(ret)
+
+from = 25
+to = 5
+$bisection {from < to} (from, to, ret, fn1(s) = s^2 - 4) = `
+	ret = bisection (from, to, function (arg) = fn1(arg))
+`
+println(ret)

@@ -1,0 +1,5 @@
+f (x) = f(x) + x
+f (0) = 0
+println( f (1) )
+println( f (2) )
+println( f (3) )

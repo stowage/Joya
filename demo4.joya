@@ -1,0 +1,6 @@
+f (a, b, fn (x)) = {
+	sum = 0
+	y:[a,b]:1 @ sum = sum + fn(y)
+}
+println (f (0, 10, fn (x) = x^2 + x * 2))
+println (f (0, 10, fn (x) = x * 2      ))
