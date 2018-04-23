@@ -139,7 +139,7 @@ Text variables can be specified in the following way:
 
 ```javascript
 	str = 'The quick brown fox jumps over the lazy dog'
-	println(a)
+	println(str)
 	pattern = 'Value of %s is %d'
 	println(format(pattern, { str, 5 }))
 ```
