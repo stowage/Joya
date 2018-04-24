@@ -45,7 +45,7 @@ Bellow is the program example written in JOYA Language:
 	
 	F @ (
 		sleep (100)
-		surface (x, y, Uout (x, F, 200, y))
+		surface (x, y, 20, Uout (x, F, 200, y))
 	)
 ```
 
@@ -611,7 +611,6 @@ For example there is a file named ```CustomModule.joya``` containing expressions
 To use specific variable or a function in current module use following statement:
 
 ```javascript
-	time = 10
 	number = 20
 	
 	time:[1, 10]:1 @
