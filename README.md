@@ -1,3 +1,4 @@
+![Joyal](https://github.com/stowage/Joya/raw/master/joyal.png "JOYAL")
 # JOYA Language
 
 JOYA Language is a lightweight scripting language.
