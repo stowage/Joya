@@ -163,7 +163,7 @@ Array variable can be initialized using braces ```{}```:
 	matrix = { {1, 0, 0}, { 0, 1, 0 }, { 0, 0, 1} }
 ```
 
-An array variable should be consistent to the initial type or to the type of the first value added to it:
+Array variables are all dynamic:
 
 ```javascript
 	add (arr, 12.5)
