@@ -14,9 +14,9 @@ java -jar joya-lang-1.0.jar demo1.joya
 
 ## JOYA Scripting Language Concept
 
-JOYA language provides an easy solution for creating user defined functions, that conforms to the semantics of math expressions. JOYA was created in order to write logics inside other programs.
+JOYA language provides an easy solution for creating user defined functions, that conforms to the semantics of math expressions. JOYAL was created in order to write logics inside other programs.
 
-Following statement demonstrates function declaration in JOYA:
+Following statement demonstrates function declaration in JOYAL:
 
 ```javascript 
 	f (x, y) = x * sin (y) + y * cos (x)
@@ -57,7 +57,7 @@ Bellow is the program example written in JOYA Language:
 
 ### Variables
 
-JOYA Variables are all global within one module and defined at compile time. Here is an example of variable declaration:
+JOYAL Variables are all global within one module and defined at compile time. Here is an example of variable declaration:
 
 ```javascript
 	t1 = 5
@@ -191,7 +191,7 @@ To access a variable in array use following expression:
 
 ### Internal Functions
 
-JOYA has internal set of standard functions like sin(x), cos(x), floor(x), ceil(x) and etc. ```If``` statement is also a function:
+JOYAL has internal set of standard functions like sin(x), cos(x), floor(x), ceil(x) and etc. ```If``` statement is also a function:
 
 ```javascript
 	k = 10
@@ -589,9 +589,9 @@ BubbleSort (n)
 
 ```
 
-### JOYA Modules
+### JOYAL Modules
 
-JOYA Modules are simple files. Each module is stored in a file with extension ```*.joya```.
+JOYAL Modules are simple files. Each module is stored in a file with extension ```*.joya```.
 Functions or variables sharing can be done by switching context between modules.
 For example there is a file named ```CustomModule.joya``` containing expressions bellow:
 
