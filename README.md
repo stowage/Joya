@@ -5,7 +5,7 @@ JOYA Language is a lightweight scripting language for math analysis
 
 ## How to run demos
 
-Clone repository, go to directory ```Joya```, open terminal and
+Clone repository, go to directory ```joyal```, open terminal and
 run command:
 
 ```sh
