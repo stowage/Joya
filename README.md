@@ -5,7 +5,7 @@ JOYA Language is a lightweight scripting language for math analysis
 
 ## How to run demos
 
-Clone repository, go to directory ```joyal```, open terminal and
+To run the application, got to lone repository, go to ```joyal``` directory, open terminal and
 run command:
 
 ```sh
@@ -63,7 +63,7 @@ JOYAL Variables are all global within one module and defined at compile time. He
 	t1 = 5
 	t2 = 10
 ```
-It's also possible to declare numeric variable without the initialization:
+It's also possible to declare numeric variables without the initialization:
 
 ```javascript
 	var
@@ -76,7 +76,7 @@ Variable can be checked if it has a value:
 ```
 This ```if``` statement checks whether variable has been initialized or not.
 Question-mark ```?``` symbol means that variable has unknown or infinite numeric value.
-Text variable can't be set to unspecified value while numeric variable can be reset to unspecified value at any time
+Text variables can't be set to unspecified value while numeric variables can be reset to unspecified value at any time.
 
 #### Numeric Variable
 
@@ -108,7 +108,7 @@ Variable ```x``` can change its value in between 0 <= x < 100. Brackets signal t
 	x:[5, 20]: 1
 	y:(-10, 10): 2
 ```
-Using of round ```)```, ```(``` brackets means that bound is not included within the range, while using of square ```[```, ```]``` brackets means that bound should be inside the range.
+Using of round ```)```, ```(``` brackets means that bounds is not included within the range, while using of square ```[```, ```]``` brackets means that bounds should be inside the range.
 
  ```?``` symbol specifying in upper or lower bound means that the lower or upper part of the range is infinite.
 
@@ -155,7 +155,7 @@ Text variable concatenation example
 
 #### Array Variables
 
-Array variable can be initialized using braces ```{}```:
+Array variable can be initialized using braces ```{ }```:
 
 ```javascript
 	arr = {}
@@ -385,7 +385,7 @@ bisection (x, y, function (arg)) = {
 println (bisection (-5, 5, function (arg) = arg^2 - 4))
 ```
 
-It's also possible to define condition in statement where function is called:
+It's also possible to define condition in a statement where function is called:
 
 ```javascript
 	f {x == 5} () = {
@@ -421,7 +421,7 @@ First value initialization:
 	z (0) = 0
 ```
 
-When performing a function call, interpreter records the value after the first call and adjusts value on all future calls, f.e.:
+When performing a function call, interpreter records the value after the first call and adjusts the value on all future calls, f.e.:
 
 ```javascript
   f (x) = f(x) + x
@@ -643,7 +643,7 @@ It's also possible to read results from an external module by assigning shared v
 
 #### Conditional Module
 
-Modules may have a behavior similar to conditional functions,
+Modules may have the same behavior as a conditional functions,
 f.e. there is a module named ```bisection.joya```
 
 ```javascript
@@ -689,6 +689,7 @@ the output will be:
 -2.0001220703125
 -2.0001220703125
 ```
+
 
 Copyright (c) 2018 Sergey Fedoseev
 
