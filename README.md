@@ -108,7 +108,7 @@ Variable ```x``` can change its value in between 0 <= x < 100. Brackets signal t
 	x:[5, 20]: 1
 	y:(-10, 10): 2
 ```
-Using of round ```)```, ```(``` brackets means that bounds is not included within the range, while using of square ```[```, ```]``` brackets means that bounds should be inside the range.
+Using of round ```)```, ```(``` brackets means that bounds are not included within the range, while using of square ```[```, ```]``` brackets means that bounds should be inside the range.
 
  ```?``` symbol specifying in upper or lower bound means that the lower or upper part of the range is infinite.
 
