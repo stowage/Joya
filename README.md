@@ -385,7 +385,7 @@ bisection (x, y, function (arg)) = {
 println (bisection (-5, 5, function (arg) = arg^2 - 4))
 ```
 
-It's also possible to define condition in a statement where function is called:
+It's also possible to override the condition in a statement where function is called:
 
 ```javascript
 	f {x == 5} () = {
