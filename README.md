@@ -112,7 +112,7 @@ Using of round ```)```, ```(``` brackets means that bounds are not included with
 
  ```?``` symbol specifying in upper or lower bound means that the lower or upper part of the range is infinite.
 
-Last parameter represents step value, which is used to iterate over the variable within the range, 
+Last parameter represents step value, which is used to iterate over the variable within the range. 
 Here is an example how to apply a range variable to the function:
 
 ```javascript
