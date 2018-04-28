@@ -282,7 +282,7 @@ Last expression should not contain semi-colon sign:
 			)
 ```
 
-last expression in a block is treated as a return statement.
+last expression in a block is treated as a return value.
 
 
 ### User Defined Functions
