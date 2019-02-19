@@ -691,7 +691,7 @@ the output will be:
 ```
 
 
-Copyright (c) 2018 Sergey Fedoseev
+Copyright (c) 2019 Sergey Fedoseev
 
 
 
